@@ -1,0 +1,30 @@
+html {
+
+    font-size: 20px;
+}
+
+
+:root{
+
+    --body-color:#011212;
+    --ball-color:#ff8800;
+
+    --width-ball:5rem;
+    --height-ball:5rem;
+
+    --raggio-ball: calc(var(--height-ball)/2)
+
+
+
+}
+
+body{
+    background-color:var(--body-color);
+}
+
+.ball{
+    width: var(--width-ball);
+    height: var(--height-ball);
+    background-color:var(--ball-color);
+   border-radius: var(--raggio-ball);
+}

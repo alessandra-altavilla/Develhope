@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione HTML</title>
+
+    <style>
+      label {
+        display: block;
+      }
+
+      form {
+        width: 400px;
+        margin: auto;
+        padding: 30px;
+        border: 5px solid white;
+        border-radius: 10%;
+        background-color: rgb(194, 171, 220);
+        color: antiquewhite;
+        flex-direction: column;
+        align-items: normal;
+        position: absolute;
+        text-align: left;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="demo.php" method="post">
+      <section>
+        <h2>Iscriviti a Develix</h2>
+
+        <div>
+          <label for="E-mail">
+            <span>Email</span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input type="email" id="E-mail" name="E-mail" autofocus required />
+          </label>
+        </div>
+
+        <div>
+          <label for="Password">
+            <span>Password: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="password"
+              id="Password"
+              name="Password"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Nome e cognome">
+            <span>Nome e cognome: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="text"
+              id="Nome e cognome"
+              name="Nome e cognome"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Data di nascita">
+            <span>Data di nascita: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="date"
+              id="Data di nascita"
+              name="Data di nascita"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Numero di telefono">
+            <span>Numero di telefono: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="tel"
+              id="Numero di telefono"
+              name="Numero di telefono"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <label for="piano">
+          <span>Scegli il tuo piano:</span>
+          <strong><abbr title="richiesto">*</abbr></strong>
+          <br />
+          <select id="piano" name="piano">
+            <option value="free">Piano Free</option>
+            <optgroup label="Piani a pagamento">
+              <option value="basic">Basic - 10€/mese</option>
+              <option value="standard">Standard - 20€/mese</option>
+              <option value="premium">Premium - 30€/mese</option>
+            </optgroup>
+          </select>
+        </label>
+
+        <br /><br />
+
+        <label for="pro">
+          <span>Vuoi il piano Pro? </span>
+          <input type="checkbox" id="pro" name="pro" value="pro" />
+          <br /><br />
+          <button type="submit">Conferma</button>
+        </label>
+
+        <div>
+          <label for="Numero di carta">
+            <span>Numero di carta: </span>
+            <br />
+            <input
+              type="number"
+              id="Numero di carta"
+              name="Numero di carta"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="cvc">
+            <span>CVC</span>
+            <br />
+            <input
+              type="text"
+              id="cvc"
+              name="cvc"
+              maxlength="4"
+              pattern="\d{3,4}"
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Scadenza">
+            <span>Scadenza</span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="date"
+              id="Scadenza"
+              name="Scadenza"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Indirizzo di fatturazione">
+            <span>Indirizzo di fatturazione</span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="text"
+              id="Indirizzo di fatturazione"
+              name="Indirizzo di fatturazione"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alessandra Altavilla" />
+    <meta
+      name="description"
+      content="Esempio di form di registrazione utente"
+    />
+
+    <title>Form di registrazione</title>
+
+    <style>
+      form {
+        width: 400px;
+        margin: auto;
+        padding: 30px;
+        border: 5px solid white;
+        border-radius: 10%;
+        background-color: rgb(194, 171, 220);
+        color: antiquewhite;
+        flex-direction: column;
+        align-items: normal;
+        position: absolute;
+        text-align: left;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modulo di registrazione utente</h1>
+
+    <form action="demo.php" method="post">
+      <section>
+        <h2>Dati generali</h2>
+
+        <div>
+          <label for="Nome e cognome">
+            <span>Nome Completo: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="text"
+              id="Nome e cognome"
+              name="Nome Completo"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="E-mail">
+            Email
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input type="email" id="E-mail" name="E-mail" autofocus required />
+          </label>
+        </div>
+
+        <div>
+          <label for="Password">
+            <span>Password: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="password"
+              id="Password"
+              name="Password"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Data di nascita">
+            <span>Data di nascita: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="date"
+              id="Data di nascita"
+              name="Data di nascita"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Genere">
+            <span>Genere: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <ul>
+              <li>
+                <label for="Uomo">
+                  <input type="radio" id="Uomo" name="Uomo" value="Uo" />Uomo
+                </label>
+                <label for="Donna">
+                  <input type="radio" id="Donna" name="Donna" value="Do" />Donna
+                </label>
+                <label for="Altro">
+                  <input type="radio" id="Altro" name="Altro" value="Al" />Altro
+                </label>
+              </li>
+            </ul>
+          </label>
+        </div>
+
+        <div>
+          <label for="Colore preferito">
+            <span>Colore preferito: </span>
+            <strong><abbr title="richiesto">*</abbr></strong>
+            <br />
+            <input
+              type="color"
+              id="Colore preferito"
+              name="Colore preferito"
+              autofocus
+              required
+            />
+          </label>
+        </div>
+
+        <div>
+          <label for="Lingua parlata">
+            <span>Lingua parlata</span>
+            <br />
+            <select name="Italiano" id="Lingua parlata">
+              <option value="Italiano">Italiano</option>
+              <option value="Inglese">Inglese</option>
+              <option value="Francese">Francese</option>
+              <option value="Spagnolo">Spagnolo</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label for="Descrizione persone">
+            <span>Descrizione persone</span>
+            <br />
+            <textarea
+              name="Descrizione"
+              id="Descrizione personale"
+              placeholder="Scrivi qualcosa di te..."
+            ></textarea>
+          </label>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

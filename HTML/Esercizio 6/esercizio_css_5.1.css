@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181a1b;
+    padding: 10px 20px;
+  }
+  
+  nav div {
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    color: darkgrey;
+    cursor: not-allowed;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .search {
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search:hover {
+    background-color: green;
+    color: white;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsività: sotto i 768px */
+@media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }

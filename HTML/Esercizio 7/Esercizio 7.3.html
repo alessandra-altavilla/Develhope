@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Articolo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      article {
+        background: url("assets/background.jpg") no-repeat center center/cover;
+        color: white;
+        padding: 50px;
+      }
+      footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+      form {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Benvenuti nel mio blog</h1>
+        <p>
+          Questo è un esempio di articolo con un'immagine di sfondo. Qui puoi
+          scrivere il tuo contenuto.
+        </p>
+      </article>
+
+      <section>
+        <h2>Iscriviti alla nostra newsletter</h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Iscriviti</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Blog di Esempio</p>
+      <img src="laptop.png" alt="Logo del blog" />
+    </footer>
+  </body>
+</html>

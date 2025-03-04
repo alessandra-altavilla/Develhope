@@ -1,0 +1,35 @@
+p:first-of-type::first-letter {
+  float: left;
+  color: darkred;
+  border: 3px ridge darkgoldenrod;
+  padding: 16px;
+  background-color: gold;
+  margin: 8px;
+}
+
+blockquote {
+  background-color: rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  position: relative;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 24px;
+  font-weight: bold;
+  color: darkred;
+}
+
+a {
+  color: darkred;
+  text-decoration: none;
+}
+
+a:hover {
+  color: crimson;
+}
+
+a:visited {
+  color: purple;
+}

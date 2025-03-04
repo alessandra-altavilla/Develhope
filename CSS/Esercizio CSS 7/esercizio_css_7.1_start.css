@@ -1,0 +1,47 @@
+body {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    gap: 1em;
+}
+
+
+#green {
+    grid-column: span 3;
+}
+
+#yellow {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#red {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#blue {
+    
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+
+#orange {
+    
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+ul {
+    display: grid;
+    gap: 1em;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+li {
+    padding: 1em;
+    list-style: none;
+    text-align: center;
+}
