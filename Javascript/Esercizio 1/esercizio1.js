@@ -11,7 +11,7 @@ console.log(rectangleBase + " " + rectangleHeight);
 
 console.log(circleRadius);
 
-console.log(pizzaPrice + " " + focacciaPrice + " " + melePrice);
+console.log(`${pizzaPrice} ${focacciaPrice} ${melePrice}`);
 
 let numbers = (5 + 5) * 2;
 

@@ -1,6 +1,6 @@
 let rectangleHeight = 20;
-let rectangleWidht = 50;
+let rectangleWidth = 50;
 
-let rectangleArea = rectangleWidht + rectangleHeight;
+let rectangleArea = rectangleWidth * rectangleHeight;
 
 console.log(rectangleArea);
