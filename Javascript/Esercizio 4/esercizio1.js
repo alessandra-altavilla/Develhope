@@ -10,14 +10,17 @@ Tariffa FB --> 100€
 let tariffa = "BB";
 
 switch(tariffa) {
-    case "BB": console.log("Il prezzo è 50€");
-    break;
+    case "BB": 
+        console.log("Il prezzo è 50€");
+        break;
 
-    case "HB": console.log("Il prezzo è 80€");
-    break;
+    case "HB": 
+        console.log("Il prezzo è 80€");
+        break;
 
-    case "FB": console.log("Il prezzo è 100€");
-    break;
+    case "FB": 
+        console.log("Il prezzo è 100€");
+        break;
 
     default: console.log("La tariffa inserita non è valida");
 }
