@@ -1,8 +1,10 @@
 function sayHelloName (callback) {
-    setTimeout(function() {
+    const stampaDelay = function() {
         console.log("Hello");
         callback();
-    }, 1000);
+    }
+
+    setTimeout(stampaDelay, 1000);
 }
 
 let printName = function () {
