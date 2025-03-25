@@ -1,4 +1,8 @@
-/* Scrivi una funzione che prende come parametro un array di oggetti, ognuno dei quali rappresenta un film con le seguenti proprietà: titolo, regista, anno e genere. La funzione dovrebbe restituire un oggetto che contiene le seguenti proprietà: numMovies: il numero totale di film nell'array numYears: il numero di anni unici rappresentati nell'array genreCounts: un oggetto che contiene un conteggio di quanti film ci sono in ciascun genere rappresentato nell'array.
+/* Scrivi una funzione che prende come parametro un array di oggetti, ognuno dei quali rappresenta un film con le seguenti proprietà: titolo, regista, anno e genere.
+La funzione dovrebbe restituire un oggetto che contiene le seguenti proprietà: 
+numMovies: il numero totale di film nell'array 
+numYears: il numero di anni unici rappresentati nell'array 
+genreCounts: un oggetto che contiene un conteggio di quanti film ci sono in ciascun genere rappresentato nell'array.
 Stampa l'oggetto.*/
 
 const movies = [
@@ -15,5 +19,24 @@ const movies = [
 ];
 
 const checkFilm = (filmsArray) => {
+    let numMovies = filmsArray.length;
+
+    const allYears = [];
     
+    filmsArray.forEach(movie => {
+        if (!allYears.includes(movie.anno)) {
+            allYears.push(movie.anno);
+        }
+    });
+    
+    const numYears = allYears.length;
+    
+    const genreCounts = filmsArray.reduce((genreCountMap, movie) => {
+        genreCountMap[movie.genere] = (genreCountMap[movie.genere] || 0) + 1;
+        return genreCountMap;
+    }, {});
+    
+    return { numMovies, numYears, genreCounts };
 }
+
+console.log(checkFilm(movies))
