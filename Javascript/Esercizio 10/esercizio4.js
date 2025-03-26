@@ -2,8 +2,13 @@
 Il nickname deve essere formato in questa modo: <name>-<age>.*/
 
 function nicknameMap(persons) {
-    return persons.map(person => person.name + " - " + person.age) 
+    /*return persons.map(person => person.name + " - " + person.age)*/ 
+    return persons.map(person => `${person.name} - ${person.age}`) 
   }
+
+  
+    
+  
   
   const persons = [
     { name: 'Paul', age: 16 },
