@@ -7,17 +7,14 @@ let tempoRimanente = 10;
 
 console.log("Conto alla rovescia in corso...")
 
-const contoAllaRovescia = (() => {
-        tempoRimanente--;
-        console.log(tempoRimanente)
+const contoAllaRovescia = ((termine) => {
+    if(tempoRimanente < termine){
+        clearInterval(id)
+        console.log("Il conto alla rovescia è finito")
+    } else{ console.log(tempoRimanente)    
+        tempoRimanente--;}    
     })
 
-const id = setInterval(contoAllaRovescia, 1000)
-setTimeout(() => {
-    clearInterval(id)
-}, 10000)
+const id = setInterval(() => contoAllaRovescia(0), 1000)
 
-setTimeout(() => {
-    console.log("Il conto alla rovescia è finito")
-}, 10000)
 
