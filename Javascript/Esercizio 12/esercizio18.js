@@ -2,12 +2,14 @@
 Implementa la funzioneottieniDati utilizzando await per attendere il caricamento dei dati, quindi visualizza i dati ottenuti in console.*/
 
 function caricamentoDati() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Questi sono i dati ottenuti dalla fonte asincrona.");
+     const data = "Dati utente"
+     data ? resolve("Questi sono i dati ottenuti dalla fonte asincrona."): reject("Non sono presenti dati utenti")
     }, 2000);
   });
 }
+
 
 async function ottieniDati() {
   try {
