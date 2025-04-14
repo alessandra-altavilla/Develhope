@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <script>
+      const html = document.documentElement;
+      html.children;
+
+      const body = html.children[1];
+      body.children
+
+      const ul = body.children[0]
+
+      const myList = ul.children[1]
+
+      myList.parentElement
+
+      myList.nextElementSibling
+
+      myList.previousElementSibling
+
+      ul.innerText
+    </script>
+  </body>
+</html>

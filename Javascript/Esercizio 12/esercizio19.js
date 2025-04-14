@@ -17,15 +17,11 @@ async function lanciaVeicoloSpaziale() {
   try {
     console.log("Inizio caricamento dei moduli...");
 
-    const moduloA = await caricaModulo("A");
-    console.log("Modulo A");
-
-    const moduloB = await caricaModulo("B");
-    console.log("Modulo B");
-
-    const moduloC = await caricaModulo("C");
-    console
-      .log("Modulo C")
+    const moduli = ["A", "B", "C"];
+    for (const element of moduli) {
+      const modulo = await caricaModulo(element);
+    console.log(modulo);
+    }
 
     setTimeout(() => {
         console.log("Veicolo spaziale pronto per il lancio!");
