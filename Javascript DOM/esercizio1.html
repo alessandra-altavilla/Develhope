@@ -12,6 +12,7 @@ Il tutto utilizzando tutte e 4 le proprietà viste nel video.-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
   </head>
 
   <body>
@@ -20,22 +21,6 @@ Il tutto utilizzando tutte e 4 le proprietà viste nel video.-->
       <li>2</li>
       <li>3</li>
     </ul>
-    <script>
-      const html = document.documentElement;
-      html.children;
-
-      const body = html.children[1];
-      body.children;
-
-      const ul = body.children[0];
-      console.log(ul.parentElement.innerText);
-
-      const myList = ul.children[1];
-      console.log(myList.innerText)
-      console.log(myList.nextElementSibling.innerText);
-      console.log(myList.previousElementSibling.innerText);
-
-      myList.innerText;
-    </script>
+    <script src="esercizio1.js"></script>
   </body>
 </html>
