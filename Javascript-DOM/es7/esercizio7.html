@@ -40,25 +40,35 @@
         // Recupera gli elementi del DOM
         const saveButton = document.querySelector('.btn');
         const inputFirstname = document.querySelector('.firstname');
+        const inputLastname = document.querySelector('.lastname');
+        const inputEmail = document.querySelector('.email');
         const spanTitleName = document.querySelector('.title-name');
-    
+        
         // Funzione per salvare i dati nel sessionStorage e aggiornare il titolo
         saveButton.addEventListener('click', () => {
             const name = inputFirstname.value;
-            // Salva il nome nel sessionStorage
-            sessionStorage.setItem('firstname', name);
-            // Aggiorna il contenuto dello span nel titolo
-            spanTitleName.textContent = name;
-        });
+            const surname = inputLastname.value;
+            const email = inputEmail.value;
     
-        // Funzione per controllare che al reload il titolo mantenga il nome
+            // Salva i dati nel sessionStorage
+            sessionStorage.setItem('firstname', name);
+            sessionStorage.setItem('lastname', surname);
+            sessionStorage.setItem('email', email);
+    
+            // Aggiorna il contenuto dello span nel titolo
+            spanTitleName.textContent = name + " " + surname;
+        });
+        
+        // Funzione per controllare che al reload il titolo mantenga i dati
         window.addEventListener('load', () => {
             const savedName = sessionStorage.getItem('firstname');
-            if (savedName) {
-                spanTitleName.textContent = savedName;
+            const savedSurname = sessionStorage.getItem('lastname');
+            if (savedName && savedSurname) {
+                spanTitleName.textContent = savedName + " " + savedSurname;
             }
         });
     </script>
+    
     
 </body>
 
