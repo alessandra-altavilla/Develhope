@@ -1,6 +1,6 @@
-/*In un'applicazione React, crea un Welcome componente funzione che riceva una prop name e una prop age. 
-Crea un Age componente che riceva una prop age. 
-Il componente Welcome renderizzerà un Welcome, {name}!messaggio all'interno del tag ap e 5 componenti Age. 
+/*In un'applicazione React, crea un componente Welcome che riceva una prop name e una prop age. 
+Crea un componente Age che riceva una prop age. 
+Il componente Welcome renderizzerà un messaggio Welcome, {name}! all'interno del tag p e 5 componenti Age. 
 Per ogni volta, utilizza il rendering condizionale con una delle seguenti condizioni:
 
 Il componente Età viene renderizzato solo se la proprietà età è maggiore di 18.

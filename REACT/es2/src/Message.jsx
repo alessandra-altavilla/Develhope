@@ -1,6 +1,6 @@
-export default function Message({eta}) {
+export default function Message({age}) {
     return <div>
     
-    {eta > 18 ? <p>Che bella giornata!</p> : <p>You are very young!</p> }
+    {age > 18 ? <p>What a nice day!</p> : <p>You are very young!</p> }
     </div>
 }

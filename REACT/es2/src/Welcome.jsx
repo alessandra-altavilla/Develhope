@@ -7,12 +7,12 @@ export default function Welcome({ name, age }) {
       <p>
         Welcome, <strong>{name}</strong>!
       </p>
-      {<Age eta={age} />}
-      {age > 18 && <Age eta={age} />}
-      {age && <Age eta={age} />}
-      {age > 18 && age < 65 && <Age eta={age} />}
-      {age > 18 && name == "John" && <Age eta={age} />}
-      <Message eta={age} />
+      {<Age age={age} />}
+      {age > 18 && <Age age={age} />}
+      {age && <Age age={age} />}
+      {age > 18 && age < 65 && <Age age={age} />}
+      {age > 18 && name === "John" && <Age age={age} />}
+      <Message age={age} />
     </div>
   );
 }
