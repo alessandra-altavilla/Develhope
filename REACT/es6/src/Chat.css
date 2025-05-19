@@ -1,0 +1,17 @@
+
+.message-sender {
+    display: flex;
+    justify-content:right;
+    
+}
+
+.message-receiver {
+    display: flex;
+    justify-content:left;
+    
+}
+
+button {
+    margin: 50px;
+    margin-top: 20px;
+}
