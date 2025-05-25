@@ -1,4 +1,4 @@
-/*CCreare un componente FocusableInput che renderizza un elemento <input>. 
+/*Creare un componente FocusableInput che renderizza un elemento <input>. 
 Appena il componente viene montato, l'input deve essere automaticamente focalizzato.
 
 Utilizzare StrictMode per creare un componente con un effetto che stampi 

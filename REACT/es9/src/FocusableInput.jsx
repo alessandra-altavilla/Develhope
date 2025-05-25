@@ -11,6 +11,6 @@ export default function FocusableInput() {
 
     console.log(inputRef)
     return(
-        <input type="text" ref={inputRef} placeholder="Write here..."/>
+        <input type="text" name="one" ref={inputRef} placeholder="Write here..."/>
     )
 }  
