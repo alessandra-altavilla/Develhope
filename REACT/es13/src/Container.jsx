@@ -6,39 +6,34 @@ i figli siano nascosti o mostrati di nuovo. Utilizza useState per gestire lo sta
 
 import React, { useState } from "react";
 
-const Container = ({ title = "Titolo del Contenitore", children = "Figli del contenitore" }) => {
-  const [collapsed, setCollapsed] = useState(false);
-
-  const toggleCollapse = () => {
-    setCollapsed((prev) => !prev);
-  };
-
-  return (
-    <div style={{ backgroundColor: "white", border: "2px solid red", padding: "10px", borderRadius: "5px" }}>
-      {/* Titolo con stile migliorato e funzionalità di collasso */}
-      <h2 
-        style={{ 
-          cursor: "pointer", 
-          margin: 0, 
-          padding: "10px", 
-          textAlign: "center", 
-          borderRadius: "3px"
-        }} 
-        onClick={toggleCollapse}
-      >
-        {title}
-      </h2>
-
-      {/* Contenuto visibile solo se collapsed è false */}
-      {!collapsed && (
-        <div style={{ marginTop: "10px", padding: "10px",  textAlign: "center"}}>
-          {children}
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default Container;
-
-
+export default function Container ({title, children}) {
+     const [collapsed, setCollapsed] = useState(false);
+   
+     const toggleCollapse = () => {
+       setCollapsed((prev) => !prev);
+     };
+   
+     return (
+       <div style={{ backgroundColor: "white", border: "2px solid red", padding: "10px", borderRadius: "5px" }}>
+         <h2 
+           style={{ 
+             cursor: "pointer", 
+             margin: 0, 
+             padding: "10px", 
+             textAlign: "center", 
+             borderRadius: "3px"
+           }} 
+           onClick={toggleCollapse}
+         >
+           {title}
+         </h2>
+   
+         {/* Contenuto visibile solo se collapsed è false */}
+         {!collapsed && (
+           <div style={{ marginTop: "10px", padding: "10px",  textAlign: "center"}}>
+             {children}
+           </div>
+         )}
+       </div>
+     );
+   };
