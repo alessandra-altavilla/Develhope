@@ -1,8 +1,4 @@
 // Add types to this function declaration.
-var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
 function doubleThePopulation(value) {
     return value * 2;
 }
@@ -15,11 +11,10 @@ doubleThePopulation(8526);
 // Hint: Check language2 is not undefined before passing it to console.log().
 function languagesSpoken(country, language1, language2) {
     console.log("The languages spoken in ".concat(country, " are:"));
-    if (typeof language2 === "string") {
-        console.log(__makeTemplateObject(["($(language2))"], ["($(language2))"]));
-    }
     console.log(language1);
-    console.log(language2);
+    if (typeof language2 === "string") { //anche se scritto così in cosole continua a dare undefined, perchè?
+        console.log(language2);
+    }
 }
 languagesSpoken("Colombia", "Spanish", "English");
 languagesSpoken("Greece", "Greek");
