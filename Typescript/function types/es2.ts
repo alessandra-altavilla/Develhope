@@ -29,3 +29,5 @@ languagesSpoken("Colombia", "Spanish", "English");
 languagesSpoken("Greece", "Greek");
 
 languagesSpoken("New Zealand", "English", "Māori");
+
+export {};

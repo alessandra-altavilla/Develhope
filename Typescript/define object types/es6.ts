@@ -38,3 +38,5 @@ const currencyData: Currency = {
 };
 
 console.log(currencyData)
+
+export {}

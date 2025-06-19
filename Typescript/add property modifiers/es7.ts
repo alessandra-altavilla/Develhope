@@ -41,3 +41,5 @@ const currencyData: Currency = {
 //currencyData.name = "Gold";
 
 currencyData.code = "GGG";
+
+export {}

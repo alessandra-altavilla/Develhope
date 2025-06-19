@@ -1,5 +1,7 @@
+"use strict";
 // Change the Country interface so the population property is optional
 // This will fix the type error for countryB.
+Object.defineProperty(exports, "__esModule", { value: true });
 var countryA = {
     name: "India",
     code: "IN",
