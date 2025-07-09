@@ -7,7 +7,7 @@ const server = createServer((req, res) => {
     "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
     "Access-Control-Max-Age": 2592000,
   });
-  const data = { message: "Hello, World" };
+  const data = { message: "Ciao a tutti" };
 
   res.end(JSON.stringify(data));
 });
