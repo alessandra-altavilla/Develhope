@@ -1,0 +1,1 @@
+Questo testo è stato scritto nel file usando fs.writeFile() con callback.
